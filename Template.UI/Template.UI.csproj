@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.2.2" />
+        <PackageReference Include="MediatR" Version="10.0.1" />
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Template.Application\Template.Application.csproj" />
+        <ProjectReference Include="..\Template.Infrastructure.Persistence\Template.Infrastructure.Persistence.csproj" />
+        <ProjectReference Include="..\Template.Infrastructure\Template.Infrastructure.csproj" />
+        <ProjectReference Include="..\Template.Application.Contracts\Template.Application.Contracts.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="library.png" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageId>Template.Infrastructure</PackageId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MediatR" Version="10.0.1" />
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Template.Application.Contracts\Template.Application.Contracts.csproj" />
+        <ProjectReference Include="..\Template.Domain\Template.Domain.csproj" />
+        <ProjectReference Include="..\Template.Infrastructure.Persistence\Template.Infrastructure.Persistence.csproj" />
+    </ItemGroup>
+
+</Project>
